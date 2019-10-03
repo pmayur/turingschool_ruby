@@ -240,12 +240,12 @@ class HashesTest < Minitest::Test
     }
     # Using the ages hash defined above
     # find the number of key/value pairs
-    num_pairs = 
+    num_pairs = ages.length
     assert_equal 3, num_pairs
   end
 
   def test_19
-    skip
+    # skip
     ages = {
       Jimmy: 4,
       Julio: 8,
@@ -253,17 +253,17 @@ class HashesTest < Minitest::Test
     }
     # Call a method on the ages hash defined above
     # to figure out if :Jimmy is a key
-    jimmy_in_hash = ______
+    jimmy_in_hash = ages.key? :Jimmy
     assert_equal true, jimmy_in_hash
 
     # Now figure out if :Jackie is in the hash
 
-    jackie_in_hash = ______
+    jackie_in_hash = ages.key? :Jackie
     assert_equal false, jackie_in_hash
   end
 
   def test_20
-    skip
+    # skip
     ages = {
       Jimmy: 4,
       Julio: 8,
@@ -271,7 +271,7 @@ class HashesTest < Minitest::Test
     }
     # Call a method on the ages hash defined above
     # to make the keys the values and vice versa
-    opposite = _____
+    opposite = ages.invert
     expected = {
       4 => :Jimmy,
       8 => :Julio,
