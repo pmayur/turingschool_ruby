@@ -2,15 +2,18 @@ def stores
   {
     olive_garden: {
       employees: ['Jeff', 'Zach', 'Samantha'],
-      dishes: [ {name: 'Risotto',
-                ingredients: ['Rice',
-                              'Cheese',
-                              'Butter'],
-                price: 12},
-                {name: 'Steak',
-                ingredients: ['Beef',
+      dishes: [ {
+                  name: 'Risotto',
+                  ingredients: ['Rice',
+                                'Cheese',
+                                'Butter'],
+                  price: 12
+                },
+                {
+                  name: 'Steak',
+                  ingredients: ['Beef',
                               'Garlic'],
-                price: 15}
+                  price: 15}
                 ]
                       },
     dennys: {
